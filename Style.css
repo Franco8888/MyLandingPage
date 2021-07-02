@@ -8,6 +8,16 @@ html {
   scrollbar-width: none;     /*    Firfox scroll hiding*/
   scroll-behavior: smooth;
   overflow-x: hidden;        /*    fixes body on mobile devices*/
+    
+    /*    fix mobile width*/
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    /*    fix mobile width*/
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 .top-background {
@@ -15,18 +25,13 @@ html {
     height: 75%;
     background-image: linear-gradient(to right, black, #121212 , black);
     position: relative;
-    /*#0d0d0d*/
 }
-
-
-
-
 
 /*section part=========================*/
 .section {
     position: absolute;
     top: 100px;
-    margin-left: 15%;
+    margin-left: 10%;
     width: 1100px;
     height: 300px;
     display: flex;
@@ -35,7 +40,7 @@ html {
 }
 
 .name-section {
-    margin-left: 50px;
+    margin-left: 35px;
 }
 
 .profile-pic {
@@ -96,7 +101,7 @@ h1 {
 
 .contact {
     width: 400px;
-    margin-left: 12.2%;
+    margin-left: 7.2%;
     position: absolute;
     top: 440px;
 }
@@ -190,12 +195,12 @@ h1 {
     bottom: 30px;
 }
 
-/*my projects card*/
+/*my projects card======================*/
 
 .projectsCard {
     position: absolute;
     top: 100px;
-    right: 10%;
+    right: 8%;
     height: 350px;
     width: 500px;
     border-radius: 10px;
@@ -210,6 +215,9 @@ h1 {
     background-color: #3F4042;
     transition: transform .3s;
     background-image: linear-gradient(to top right, #2e2e2e, #424242);
+    box-shadow: 1px 1px 9px 1px rgba(59,57,57,0.74);
+-webkit-box-shadow: 1px 1px 9px 1px rgba(59,57,57,0.74);
+-moz-box-shadow: 1px 1px 9px 1px rgba(59,57,57,0.74);
 }
 
 .cardContainer:hover {
@@ -222,7 +230,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     position: absolute;
-    top: 60px;
+    top: 43px;
     margin-left: 27%;
     margin-right: 27%;
     color: aliceblue;
@@ -231,10 +239,10 @@ h1 {
 
 .cardContainer img {
     position: absolute;
-    bottom: 60px;
+    bottom: 15px;
     width: 45%;
-    margin-left: 27.5%;
-    margin-right: 27.5%;
+    margin-left: 31.5%;
+    margin-right: 23.5%;
 }
 
 
@@ -245,6 +253,9 @@ h1 {
     height: 80%;
     background-image: linear-gradient(to right, black, #121212 , black);
     position: relative;
+/*    let the top part scroll if the cards wraps*/
+    overflow: auto; 
+
 }
 
 .bottom-projectsPage {
@@ -263,7 +274,6 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    overflow: hidden;
 }
 
 .project {
@@ -276,13 +286,236 @@ h1 {
     background-color: #3F4042;
 }
 
+.cardContainerProject {
+    background-color: aliceblue;
+    height: inherit;
+    border-radius: 10px;
+    position: relative;
+    background-color: #3F4042;
+    transition: transform .3s;
+    background-image: linear-gradient(to top right, #2e2e2e, #424242);
+    box-shadow: 1px 1px 9px 1px rgba(59,57,57,0.74);
+    -webkit-box-shadow: 1px 1px 9px 1px rgba(59,57,57,0.74);
+    -moz-box-shadow: 1px 1px 9px 1px rgba(59,57,57,0.74);
+}
+
+.cardContainerProject:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 8px 5px #e3e3e3;
+}
+
 .projectHeading {
     font-size: 50px;
     text-align: center;
     position: absolute;
-    top: 50px;
+    top: 30px;
     margin-left: 30%;
     margin-right: 30%;
     color: aliceblue;
 }
 
+.cardContainerProject img{
+    position: absolute;
+    bottom: 45px;
+    width: 45%;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+}
+
+/*projects page===========================================*/
+
+/*for phone devices smaller than 415===========*/
+@media only screen and (max-width: 415px){
+    
+    /*section part=========================*/
+    .section {
+        position: static;
+        top: 20px;
+        margin-left: 0%;
+        width: 360px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-section {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+
+    .profile-pic {
+        margin-top: 10px;
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Roboto';
+    }
+
+    .line {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 9px;
+
+    }
+
+    /*section part=========================*/
+    
+    /*bottom section========================================*/
+
+    .about {
+        width: 90%;
+        height: 75px;
+        bottom: 40px;
+        margin: 0px 5% 0px 5%;
+        font-size: 15px;
+    }
+
+    .bottomLine1 {
+        width: 80%;
+        height: 8px;
+        margin-left: 10%;
+        margin-right: 10%;
+        top: 25px;
+    }
+
+
+    .bottomLine2 {
+        width: 80%;
+        height: 8px;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: absolute;
+        bottom: 20px;
+    }
+    
+    /*contact section=============================*/
+
+    .contact {
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0%;
+        position: static;
+    }
+
+    .social-media
+    {
+        margin-bottom: 10px;
+    }
+
+    .social-media a:hover {
+        transform: scale(1.1);    
+    }
+    .social-media a img
+    {
+        height: 35px;
+    }
+
+    .contact-detials
+    {
+        margin-top: 20px;
+        margin-left: 2%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .contact-detials div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .contact-detials img
+    {
+        height: 18px;
+        margin-right: 8px;
+    }
+
+    .contact-detials p {
+        font-size: 16px;
+    }
+    
+    
+    /*contact section=============================*/
+    .projectsCard {
+        position: absolute;
+        top: 375px;
+        height: 80px;
+        width: 100px;
+    }
+
+    .cardContainer {
+        background-color: aliceblue;
+        height: inherit;
+        width: inherit;
+    }
+
+    .cardHeading {
+        font-size: 18px;
+        top: 7px;
+        margin-left: 8.5%;
+        margin-right: 8.5%;
+        color: aliceblue;
+        font-family: 'Benne', serif;
+    }
+
+    .cardContainer img {
+        position: absolute;
+        bottom: 3px;
+        width: 45%;
+        margin-left: 31.5%;
+        margin-right: 23.5%;
+    }
+    
+}
+
+/*for width between 416-1024===========*/
+@media only screen and (max-width: 1024px) and (min-width: 416px) {
+    
+}
+
+/*for width between 416-1023===========*/
+@media only screen and (max-width: 1570px) and (min-width: 1025px) {
+    .top-background {
+        overflow: auto;
+        overflow-x: hidden;
+    }
+    
+    .projectsCard {
+        top: 400px;
+        right: 8%;
+        height: 200px;
+        width: 300px;
+    }
+    
+    .cardHeading {
+        font-size: 35px;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        top: 20px;
+        margin-left: 23%;
+        margin-right: 23%;
+        color: aliceblue;
+        font-family: 'Benne', serif;
+    }
+
+    .cardContainer img {
+        position: absolute;
+        bottom: 10px;
+        width: 40%;
+        margin-left: 31.5%;
+        margin-right: 28%;
+    }
+}
