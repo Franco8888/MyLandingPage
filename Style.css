@@ -230,7 +230,7 @@ h1 {
     font-weight: bold;
     text-align: center;
     position: absolute;
-    top: 43px;
+    top: 23px;
     margin-left: 27%;
     margin-right: 27%;
     color: aliceblue;
@@ -239,10 +239,10 @@ h1 {
 
 .cardContainer img {
     position: absolute;
-    bottom: 15px;
-    width: 45%;
-    margin-left: 31.5%;
-    margin-right: 23.5%;
+    bottom: 10px;
+    width: 40%;
+    margin-left: 32.5%;
+    margin-right: 27.5%;
 }
 
 
@@ -324,15 +324,14 @@ h1 {
 
 /*projects page===========================================*/
 
-/*for phone devices smaller than 415===========*/
-@media only screen and (max-width: 415px){
-    
+/*for phone devices smaller than 360===========*/
+@media only screen and (max-width: 376px) and (min-width: 350px){
     /*section part=========================*/
     .section {
         position: static;
         top: 20px;
         margin-left: 0%;
-        width: 360px;
+        width: 100%;
         height: fit-content;
         display: flex;
         flex-direction: column;
@@ -401,7 +400,7 @@ h1 {
 
     .contact {
         width: 100%;
-        margin-top: 10px;
+        margin-top: 25px;
         margin-left: 0%;
         position: static;
     }
@@ -447,7 +446,7 @@ h1 {
     }
     
     
-    /*contact section=============================*/
+    /*project card section=============================*/
     .projectsCard {
         position: absolute;
         top: 375px;
@@ -464,8 +463,8 @@ h1 {
     .cardHeading {
         font-size: 18px;
         top: 7px;
-        margin-left: 8.5%;
-        margin-right: 8.5%;
+        margin-left: 3%;
+        margin-right: 3%;
         color: aliceblue;
         font-family: 'Benne', serif;
     }
@@ -477,12 +476,249 @@ h1 {
         margin-left: 31.5%;
         margin-right: 23.5%;
     }
+}
+
+/*for phone devices between 361-416===========*/
+@media only screen and (max-width: 416px) and (min-width: 376px){
+    
+    /*section part=========================*/
+    .section {
+        position: static;
+        top: 20px;
+        margin-left: 0%;
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name-section {
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0px;
+    }
+
+    .profile-pic {
+        margin-top: 35px;
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Roboto';
+    }
+
+    .line {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 9px;
+
+    }
+
+    /*section part=========================*/
+    
+    /*bottom section========================================*/
+
+    .about {
+        width: 90%;
+        height: 85px;
+        bottom: 55px;
+        margin: 0px 5% 0px 5%;
+        font-size: 16px;
+    }
+
+    .bottomLine1 {
+        width: 80%;
+        height: 8px;
+        margin-left: 10%;
+        margin-right: 10%;
+        top: 25px;
+    }
+
+
+    .bottomLine2 {
+        width: 80%;
+        height: 8px;
+        margin-left: 10%;
+        margin-right: 10%;
+        position: absolute;
+        bottom: 40px;
+    }
+    
+    /*contact section=============================*/
+
+    .contact {
+        width: 100%;
+        margin-top: 50px;
+        margin-left: 0%;
+        position: static;
+    }
+
+    .social-media
+    {
+        margin-bottom: 10px;
+    }
+
+    .social-media a:hover {
+        transform: scale(1.1);    
+    }
+    .social-media a img
+    {
+        height: 50px;
+    }
+
+    .contact-detials
+    {
+        margin-top: 20px;
+        margin-left: 2%;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .contact-detials div {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+    }
+
+    .contact-detials img
+    {
+        height: 18px;
+        margin-right: 8px;
+    }
+
+    .contact-detials p {
+        font-size: 16px;
+    }
+    
+    
+    /*project card section=============================*/
+    .projectsCard {
+        position: absolute;
+        top: 460px;
+        height: 80px;
+        width: 130px;
+    }
+
+    .cardContainer {
+        background-color: aliceblue;
+        height: inherit;
+        width: inherit;
+    }
+
+    .cardHeading {
+        font-size: 18px;
+        top: 7px;
+        margin-left: 14%;
+        margin-right: 14%;
+        color: aliceblue;
+        font-family: 'Benne', serif;
+    }
+
+    .cardContainer img {
+        position: absolute;
+        bottom: 3px;
+        width: 36%;
+        margin-left: 33.5%;
+        margin-right: 29.5%;
+    }
     
 }
 
 /*for width between 416-1024===========*/
 @media only screen and (max-width: 1024px) and (min-width: 416px) {
     
+    /*section part=========================*/
+    .section {
+        margin-left: 8%;
+        width: 92%;
+    }
+
+    .name-section {
+        margin-left: 20px;
+    }
+
+    .profile-pic {
+        height: 250px;
+        width: 250px;
+    }
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .line {
+        width: 400px;
+    }
+    
+    /*contact section=============================*/
+
+    .contact {
+        width: 350px;
+        margin-left: 2%;
+        top: 440px;
+    }
+
+    .contact-detials div {
+        margin: 5px;
+    }
+
+    .contact-detials img
+    {
+        height: 24px;
+    }
+
+    .contact-detials p {
+        min-width: 160px;
+    }
+
+    /*bottom section========================================*/
+
+    .about {
+        width: 50%;
+        height: 100px;
+        margin: 0px 25% 0px 25%;
+        font-size: 20px;
+        bottom: 70px;
+    } 
+    
+    
+    /*my projects card======================*/
+    .projectsCard {
+        top: 400px;
+        right: 8%;
+        height: 200px;
+        width: 300px;
+    }
+    
+    .cardHeading {
+        font-size: 31px;
+        font-weight: bold;
+        text-align: center;
+        position: absolute;
+        top: 20px;
+        margin-left: 23%;
+        margin-right: 23%;
+        color: aliceblue;
+        font-family: 'Benne', serif;
+    }
+
+    .cardContainer img {
+        position: absolute;
+        bottom: 15px;
+        width: 36%;
+        margin-left: 33.5%;
+        margin-right: 30%;
+    }
 }
 
 /*for width between 416-1023===========*/
@@ -500,7 +736,7 @@ h1 {
     }
     
     .cardHeading {
-        font-size: 35px;
+        font-size: 31px;
         font-weight: bold;
         text-align: center;
         position: absolute;
@@ -513,9 +749,9 @@ h1 {
 
     .cardContainer img {
         position: absolute;
-        bottom: 10px;
-        width: 40%;
-        margin-left: 31.5%;
-        margin-right: 28%;
+        bottom: 15px;
+        width: 36%;
+        margin-left: 33.5%;
+        margin-right: 30%;
     }
 }
