@@ -57,6 +57,13 @@ h1 {
     font-family: 'Roboto';
 }
 
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Roboto';
+}
+
 
 @keyframes animateHeadings {
   0% {
@@ -357,6 +364,13 @@ h1 {
         font-size: 30px;
         font-family: 'Roboto';
     }
+    
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Roboto';
+    }
 
     .line {
         width: 85%;
@@ -512,6 +526,13 @@ h1 {
         font-size: 30px;
         font-family: 'Roboto';
     }
+    
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Roboto';
+    }
 
     .line {
         width: 85%;
@@ -653,6 +674,10 @@ h1 {
     }
 
     h1 {
+        font-size: 45px;
+    }
+    
+    h2 {
         font-size: 45px;
     }
 
