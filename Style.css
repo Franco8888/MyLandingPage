@@ -169,13 +169,23 @@ h2 {
     position: relative;
 }
 
-.about {
+.bottom-section {
+    height: 80%;
+    width: 33%;
+    margin-left: 35.5%;
+    margin-right: 35.5%;
     position: absolute;
-    width: 30%;
-    height: 75px;
-    bottom: 80px;
+    bottom: 5%;
+}
+
+.about {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 80px;
     color: white;
-    margin: 0px 35% 0px 35%;
     text-align: center;
     font-size: 20px;
     overflow: hidden;
@@ -183,23 +193,16 @@ h2 {
 
 .bottomLine1 {
     background-color: white;
-    width: 33%;
+    width: 100%;
     height: 10px;
-    margin-left: 33.5%;
-    margin-right: 33.5%;
-    position: absolute;
-    top: 30px;
-}
 
+}
 
 .bottomLine2 {
     background-color: white;
-    width: 33%;
+    width: 100%;
     height: 10px;
-    margin-left: 33.5%;
-    margin-right: 33.5%;
-    position: absolute;
-    bottom: 30px;
+
 }
 
 /*my projects card======================*/
@@ -223,8 +226,8 @@ h2 {
     transition: transform .3s;
     background-image: linear-gradient(to top right, #2e2e2e, #424242);
     box-shadow: 1px 1px 9px 1px rgba(59,57,57,0.74);
--webkit-box-shadow: 1px 1px 9px 1px rgba(59,57,57,0.74);
--moz-box-shadow: 1px 1px 9px 1px rgba(59,57,57,0.74);
+    -webkit-box-shadow: 1px 1px 9px 1px rgba(59,57,57,0.74);
+    -moz-box-shadow: 1px 1px 9px 1px rgba(59,57,57,0.74);
 }
 
 .cardContainer:hover {
@@ -384,30 +387,31 @@ h2 {
     
     /*bottom section========================================*/
 
-    .about {
+    .bottom-section {
+        height: 80%;
         width: 90%;
-        height: 75px;
-        bottom: 40px;
-        margin: 0px 5% 0px 5%;
-        font-size: 15px;
+        margin-left: 5%;
+        margin-right: 5%;
+        bottom: 8%;
+    }
+
+    .about {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 14px;
+        overflow: hidden;
     }
 
     .bottomLine1 {
-        width: 80%;
-        height: 8px;
-        margin-left: 10%;
-        margin-right: 10%;
-        top: 25px;
+        height: 6px;
+
     }
 
-
     .bottomLine2 {
-        width: 80%;
-        height: 8px;
-        margin-left: 10%;
-        margin-right: 10%;
-        position: absolute;
-        bottom: 20px;
+        height: 6px;
     }
     
     /*contact section=============================*/
@@ -546,30 +550,31 @@ h2 {
     
     /*bottom section========================================*/
 
-    .about {
+    .bottom-section {
+        height: 85%;
         width: 90%;
-        height: 85px;
-        bottom: 55px;
-        margin: 0px 5% 0px 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        bottom: 3%;
+    }
+
+    .about {
+        margin-top: 9px;
+        margin-bottom: 15px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
         font-size: 16px;
+        overflow: hidden;
     }
 
     .bottomLine1 {
-        width: 80%;
-        height: 8px;
-        margin-left: 10%;
-        margin-right: 10%;
-        top: 25px;
+        height: 6px;
+
     }
 
-
     .bottomLine2 {
-        width: 80%;
-        height: 8px;
-        margin-left: 10%;
-        margin-right: 10%;
-        position: absolute;
-        bottom: 40px;
+        height: 6px;
     }
     
     /*contact section=============================*/
@@ -708,13 +713,33 @@ h2 {
 
     /*bottom section========================================*/
 
+    .bottom-section {
+        height: 80%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        bottom: 5%;
+    }
+
     .about {
-        width: 50%;
-        height: 100px;
-        margin: 0px 25% 0px 25%;
-        font-size: 20px;
-        bottom: 70px;
-    } 
+        margin-top: 20px;
+        margin-bottom: 25px;
+        height: 60%;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 24px;
+        overflow: hidden;
+    }
+
+    .bottomLine1 {
+        height: 10px;
+
+    }
+
+    .bottomLine2 {
+        height: 10px;
+    }
     
     
     /*my projects card======================*/
